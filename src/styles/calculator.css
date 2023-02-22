@@ -21,11 +21,15 @@
 .calculator-buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
+  grid-gap: 1px;
 }
 
 .calculator-button {
   font-size: 1.2rem;
   border: none;
   height: 60px;
+}
+
+.calculator {
+  width: 30vw;
 }
