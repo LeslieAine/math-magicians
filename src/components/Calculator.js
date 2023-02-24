@@ -1,30 +1,44 @@
 import '../styles/calculator.css';
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
 
-const Calculator = () => (
-  <div className="calculator">
-    <div className="calculator-display">0</div>
-    <div className="calculator-buttons">
-      <button className="calculator-button" type="button">AC</button>
-      <button className="calculator-button" type="button"> +/- </button>
-      <button className="calculator-button" type="button"> % </button>
-      <button className="calculator-button right" type="button"> ÷ </button>
-      <button className="calculator-button" type="button"> 7 </button>
-      <button className="calculator-button" type="button"> 8 </button>
-      <button className="calculator-button" type="button"> 9 </button>
-      <button className="calculator-button right" type="button"> x </button>
-      <button className="calculator-button" type="button"> 4 </button>
-      <button className="calculator-button" type="button"> 5 </button>
-      <button className="calculator-button" type="button"> 6 </button>
-      <button className="calculator-button right" type="button"> - </button>
-      <button className="calculator-button" type="button"> 1 </button>
-      <button className="calculator-button" type="button"> 2 </button>
-      <button className="calculator-button" type="button"> 3 </button>
-      <button className="calculator-button right" type="button"> + </button>
-      <button className="calculator-button" id="zero" type="button"> 0 </button>
-      <button className="calculator-button" type="button"> . </button>
-      <button className="calculator-button right" type="button"> = </button>
+function Calculator() {
+  const [state, setState] = useState({ total: '0', next: null, operation: null });
+
+  const clickHandler = (e) => {
+    setState(calculate(state, e.target.innerHTML.trim()));
+  };
+
+  return (
+    <div className="calculator">
+      <div className="calculator-display">
+        {state.total}
+        {state.operation}
+        {state.next}
+      </div>
+      <div className="calculator-buttons">
+        <button className="calculator-button" type="button" onClick={clickHandler}>AC</button>
+        <button className="calculator-button" type="button" onClick={clickHandler}> +/- </button>
+        <button className="calculator-button" type="button" onClick={clickHandler}> % </button>
+        <button className="calculator-button right" type="button" onClick={clickHandler}> ÷ </button>
+        <button className="calculator-button" type="button" onClick={clickHandler}> 7 </button>
+        <button className="calculator-button" type="button" onClick={clickHandler}> 8 </button>
+        <button className="calculator-button" type="button" onClick={clickHandler}> 9 </button>
+        <button className="calculator-button right" type="button" onClick={clickHandler}> x </button>
+        <button className="calculator-button" type="button" onClick={clickHandler}> 4 </button>
+        <button className="calculator-button" type="button" onClick={clickHandler}> 5 </button>
+        <button className="calculator-button" type="button" onClick={clickHandler}> 6 </button>
+        <button className="calculator-button right" type="button" onClick={clickHandler}> - </button>
+        <button className="calculator-button" type="button" onClick={clickHandler}> 1 </button>
+        <button className="calculator-button" type="button" onClick={clickHandler}> 2 </button>
+        <button className="calculator-button" type="button" onClick={clickHandler}> 3 </button>
+        <button className="calculator-button right" type="button" onClick={clickHandler}> + </button>
+        <button className="calculator-button" id="zero" type="button" onClick={clickHandler}> 0 </button>
+        <button className="calculator-button" type="button" onClick={clickHandler}> . </button>
+        <button className="calculator-button right" type="button" onClick={clickHandler}> = </button>
+      </div>
     </div>
-  </div>
-);
+  );
+}
 
 export default Calculator;
