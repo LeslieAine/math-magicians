@@ -1,3 +1,8 @@
+.calculator {
+  flex: 1;
+  width: 30vw;
+}
+
 .calculator-display {
   background-color: #858694;
   color: #fff;
@@ -28,8 +33,4 @@
   font-size: 1.2rem;
   border: none;
   height: 60px;
-}
-
-.calculator {
-  width: 30vw;
 }
