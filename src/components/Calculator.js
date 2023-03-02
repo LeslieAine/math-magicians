@@ -11,11 +11,12 @@ function Calculator() {
 
   return (
     <div className="calculator">
-      <div className="calculator-display">
+      {/* <div className="calculator-display">
         {state.total}
         {state.operation}
         {state.next}
-      </div>
+      </div> */}
+      <Display result={state.next || state.total || '0'} />
       <div className="calculator-buttons">
         <button className="calculator-button" type="button" onClick={clickHandler}>AC</button>
         <button className="calculator-button" type="button" onClick={clickHandler}> +/- </button>
