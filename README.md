@@ -139,6 +139,18 @@ To run tests, run the following command:
 - GitHub: [@LeslieAine](https://github.com/LeslieAine)
 - LinkedIn: [@LeslieAine](https://linkedin.com/in/LeslieAine)
 
+👤 **TayyabKM**
+
+- Github: [@TayyabKM](https://github.com/TayyabKM)
+- Twitter: [@TayyabI83126361](https://twitter.com/TayyabI83126361)
+- Linkedin: [@tayyab-irfan-01b72b1aa](https://www.linkedin.com/in/tayyab-irfan-01b72b1aa/)
+
+👤 **Rita Daniel**
+
+- Github: [@RitaDee](https://github.com/RitaDee)
+- Twitter: [@durdana_dee](https://twitter.com/durdana_dee)
+- Linkedin: [@rita-daniel](https://www.linkedin.com/in/rita-daniel/)
+
 ## 🔭 Future Features <a name="future-features"></a>
 
 > Describe 1 - 3 features you will add to the project.
