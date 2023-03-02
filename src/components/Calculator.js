@@ -1,7 +1,6 @@
 import '../styles/calculator.css';
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
-import Display from './Display';
 
 function Calculator() {
   const [state, setState] = useState({ total: '0', next: null, operation: null });
@@ -12,12 +11,11 @@ function Calculator() {
 
   return (
     <div className="calculator">
-      {/* <div className="calculator-display">
+      <div className="calculator-display">
         {state.total}
         {state.operation}
         {state.next}
-      </div> */}
-      <Display result={state.next || state.total || '0'} />
+      </div>
       <div className="calculator-buttons">
         <button className="calculator-button" type="button" onClick={clickHandler}>AC</button>
         <button className="calculator-button" type="button" onClick={clickHandler}> +/- </button>
