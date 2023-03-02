@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, BrowserRouter } from 'react-router-dom';
 import styles from '../styles/Nav.module.css';
 
 const Nav = () => (
