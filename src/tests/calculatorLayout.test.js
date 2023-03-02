@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import CalculatorLayout from '../components/CalculatorLayout';
+import CalculatorLayout from '../components/calculatorLayout';
 
 it('renders correctly', () => {
   const tree = renderer.create(<CalculatorLayout />).toJSON();
