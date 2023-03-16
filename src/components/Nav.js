@@ -1,23 +1,21 @@
-import { Link, Outlet, BrowserRouter } from 'react-router-dom';
+import { NavLink, Outlet, BrowserRouter } from 'react-router-dom';
 import styles from '../styles/Nav.module.css';
 
 const Nav = () => (
   <>
     <nav className={styles.nav}>
       <h1 className={styles.title}>Math Magicians</h1>
-      <BrowserRouter>
         <ul className={styles.navList}>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/calculator">Calculator</Link>
+            <NavLink to="calculator">Calculator</NavLink>
           </li>
           <li>
-            <Link to="/quote">Quote</Link>
+            <NavLink to="quote">Quote</NavLink>
           </li>
         </ul>
-      </BrowserRouter>
     </nav>
     <Outlet />
   </>
