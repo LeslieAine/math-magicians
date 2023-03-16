@@ -1,4 +1,4 @@
-import { NavLink, Outlet, } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import styles from '../styles/Nav.module.css';
 
 const Nav = () => (

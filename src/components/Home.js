@@ -5,7 +5,7 @@ const Home = () => (
     <h1 className={styles.homeH1}>Welcome to my Math Magicians website!</h1>
     <div className={styles.homeParas}>
       <p className={styles.homeP}>
-        Math magicians is a website for all fans of mathematics. 
+        Math magicians is a website for all fans of mathematics.
         It is a Single Page App (SPA) that allows users to:
         <br />
         <br />
