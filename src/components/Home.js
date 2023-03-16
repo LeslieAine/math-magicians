@@ -5,32 +5,19 @@ const Home = () => (
     <h1 className={styles.homeH1}>Welcome to my Math Magicians website!</h1>
     <div className={styles.homeParas}>
       <p className={styles.homeP}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Facilis minima explicabo ex laboriosam vitae quas repudiandae culpa quam labore omnis est,
-        laudantium enim in nulla eius inventore neque odit eum!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Facilis minima explicabo ex laboriosam vitae quas repudiandae culpa quam labore omnis est,
-        laudantium enim in nulla eius inventore neque odit eum!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Facilis minima explicabo ex laboriosam vitae quas repudiandae culpa quam labore omnis est,
-        laudantium enim in nulla eius inventore neque odit eum!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Facilis minima explicabo ex laboriosam vitae quas repudiandae culpa quam labore omnis est,
-        laudantium enim in nulla eius inventore neque odit eum!
+        Math magicians is a website for all fans of mathematics.
+        It is a Single Page App (SPA) that allows users to:
+        <br />
+        <br />
+        Make simple calculations.
+        <br />
+        Read a random math-related quote.
       </p>
+      <br />
       <p className={styles.homeP}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Facilis minima explicabo ex laboriosam vitae quas repudiandae culpa quam labore omnis est,
-        laudantium enim in nulla eius inventore neque odit eum!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Facilis minima explicabo ex laboriosam vitae quas repudiandae culpa quam labore omnis est,
-        laudantium enim in nulla eius inventore neque odit eum!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Facilis minima explicabo ex laboriosam vitae quas repudiandae culpa quam labore omnis est,
-        laudantium enim in nulla eius inventore neque odit eum!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Facilis minima explicabo ex laboriosam vitae quas repudiandae culpa quam labore omnis est,
-        laudantium enim in nulla eius inventore neque odit eum!
+        Feel free to check out the calculator and make use of its functions!!!
+        <br />
+        Also, dont forget to be inspired by our random quotes!
       </p>
     </div>
   </div>
